@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F9F9F9;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px 20px;;
+}
+
+h1, 
+h2, 
+p, 
+a,
+article {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    margin-top: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li a.hide-mobile {
+    margin-left: 49px;
+
+    font-weight: 500;
+font-size: 14px;
+line-height: 152.19%;
+/* or 21px */
+
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+background: #ED7671;
+border-radius: 4px;
+padding: 7px 25px
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 70vh;
+
+    font-weight: 500;
+}
+
+h1 {
+    max-width: 560px;;
+    font-size: 64px;
+    line-height: 134.5%;
+    /* or 86px */
+    
+    letter-spacing: 0.03em;
+    color: #111;
+}
+
+.info p {
+    font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+color: rgba(231, 51, 43, 0.83);
+
+margin-top: 23px;
+margin-bottom: 20px;;
+}
+
+.info article {
+max-width: 594px;
+    
+font-weight: 300;
+font-size: 16px;
+line-height: 174.19%;
+/* or 28px */
+
+letter-spacing: 0.03em;
+}
+
+hr {
+    margin-top: 51px;
+    width: 200px;
+    height: 2px;
+    border: none;
+
+background: rgba(73, 73, 73, 0.27);
+}
+
+
+.form {
+    padding: 69px 30px;
+    width: 434px;
+    
+    border: 1px solid #7E7E7E;
+box-sizing: border-box;
+border-radius: 10px;
+}
+
+.form h2 {
+    text-align: center;
+    padding-bottom: 25px;
+
+    font-size: 24px;
+line-height: 36px;
+color: #111;
+
+}
+
+
+label, option label {
+    font-size: 16px;
+line-height: 19px;
+
+font-family: Roboto;
+}
+
+form input, select {
+    width: 100%;
+    height: 36px;
+
+    border: 1px solid rgba(201, 179, 179, 0.69);
+box-sizing: border-box;
+padding: 3px;
+margin-top: 8px;
+margin-bottom: 30px;;
+
+background-color: transparent;
+outline: none;
+}
+
+button {
+    background: rgba(231, 51, 43, 0.66);
+    font-size: 18px;
+line-height: 152.19%;
+/* or 27px */
+
+letter-spacing: 0.03em;
+padding-left: 20px;
+padding-right: 58px;
+color: #fff;
+border: none;
+
+width: 145px;
+height: 39px;
+cursor: pointer;
+border-radius: 4px;;
+outline: none;
+}
+
+
+
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 8px;;
+    background: rgba(231, 51, 43, 0.07);
+border-radius: 0px 0px 10px 10px;
+}
+
+footer p {
+    text-align: center;
+    font-family: Roboto;
+font-style: normal;
+font-size: .8rem;
+line-height: 16px;
+letter-spacing: 0.2em;
+
+color: #000000;
+}
+
+
+@media (max-width: 1000px) {
+    .flex {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        height: 100%;;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 700px)   {
+    nav {
+        margin-top: 15px;
+        margin-bottom: 56px;
+    }
+    h1 {
+        font-size: 28px;
+        margin-bottom: 28px;;
+        width: 287px;
+    }
+
+    .flex p {
+        font-size: 14px;
+        margin-top: 0;
+        justify-content: flex-start;
+    }
+
+    div.form {
+        width: 300px;
+        margin-top: 10px;
+        padding: 27px;
+
+        border: 1px solid rgba(126, 126, 126, 0.12);
+box-sizing: border-box;
+border-radius: 10px;
+text-align: left;
+    }
+
+    .form h2 {
+        font-size: 18px;
+line-height: 27px;
+    }
+
+    label {
+        font-size: 14px;
+line-height: 16px;
+padding: 0;
+width: 100%;
+    }
+input {
+    height: 28px;
+}
+button {
+    height: 32px;
+    font-size: 16px;
+}
+    footer {
+        top: 42px;
+        bottom: 0;
+        position: relative;
+        font-size: 9px;
+    }
+
+    footer p {
+        font-size: 9px;
+    }
+}
